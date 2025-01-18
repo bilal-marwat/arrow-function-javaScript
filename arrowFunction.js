@@ -83,7 +83,6 @@ console.log(sumArray(arr));
 
 
 // Task 3: Filter Even Numbers
-
 const array = [2, 5, 8, 9, 0, 12, 13, 15, 17, 16, 20, 22, 24];
 const arraEvenNum = (array) => {
     let evenNum = [];
@@ -93,7 +92,6 @@ const arraEvenNum = (array) => {
         }
     }
     return evenNum;
-
     // return array.filter((num) => num % 2 === 0); // short code filter method
 }
 
@@ -101,22 +99,49 @@ console.log(arraEvenNum(array));
 
 
 // Task 4: Greeting Function
-let userEnter = prompt("Enter your name");
-const greeting = (userEnter) => {
-    return `Hello ${userEnter}`;
-}
-console.log(greeting(userEnter));
+
+
+// let userEnter = prompt("Enter your name");
+// const greeting = (userEnter) => {
+//     return `Hello ${userEnter}`;
+// }
+// console.log(greeting(userEnter));
+
+
+
 
 
 // Task 5: Find Maximum Value
 // Ek arrow function likho jo 3 numbers ka input le aur sabse bada number return kare.
 
-let number1 = Number(prompt("Enter first number"));
-let number2 = Number(prompt("Enter second number"));
-let number3 = Number(prompt("Enter third number"));
-const maxNum = (number1,number2,number3) => {
-    return Math.max(number1,number2,number3);
-}
-console.log(maxNum(number1,number2,number3));
+// let number1 = Number(prompt("Enter first number"));
+// let number2 = Number(prompt("Enter second number"));
+// let number3 = Number(prompt("Enter third number"));
+// //implicit functional function
+// const maxNumberFinnd = (number1,number2,number3) => Math.max(number1, number2, number3);
+// console.log(maxNumberFinnd(number1,number2,number3));
 
+
+// const maxNum = (number1,number2,number3) => {
+//     return Math.max(number1,number2,number3);
+// }
+// console.log(maxNum(number1,number2,number3));
+
+
+// create function that takes string as a argument and returns the number of vowela in the string
+
+const countVowels = (str) =>{
+    let vowels = ["a", "e", "i", "o", "u"];
+    let count = 0;
+    for(let i = 0; i < str.length; i++){
+        if(vowels.includes(str[i])){
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(countVowels("Hello World")); // Output: 3
+
+//for of loop use
 
